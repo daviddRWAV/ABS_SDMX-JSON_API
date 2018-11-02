@@ -42,7 +42,7 @@ schemaCallback([tableInfo]);
 			
 			var arrKey = Object.keys(obsvs)[i].split(':')
 			
-            ASGS_2011_STATE_GCCSA_SA4_SA3_SA2 = resp.structure.dimensions.observation[0].values[arrKey[0]].name;
+            ASGS_2017_ERP_SA2 = resp.structure.dimensions.observation[0].values[arrKey[0]].name;
             HH_TYPE = resp.structure.dimensions.observation[1].values[arrKey[1]].name;
             PROJ_SERIES = resp.structure.dimensions.observation[2].values[arrKey[2]].name;
             Frequency = resp.structure.dimensions.observation[3].values[arrKey[3]].name;
@@ -50,7 +50,7 @@ schemaCallback([tableInfo]);
             obs = obsvs[Object.keys(obsvs)[i]][0]; 
 
             tableData.push({
-                "ASGS_2011_STATE_GCCSA_SA4_SA3_SA2" : ASGS_2011_STATE_GCCSA_SA4_SA3_SA2,
+                "ASGS_2017_ERP_SA2" : ASGS_2011_STATE_GCCSA_SA4_SA3_SA2,
                 "HH_TYPE" : HH_TYPE,
                 "PROJ_SERIES" : PROJ_SERIES,
                 "Frequency" : Frequency,
